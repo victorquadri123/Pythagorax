@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+:root {
+    --primary-color: rgb(192, 166, 20);
+    --secondary-color: #2B2B2B;
+  }
+  
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    font-family: 'Raleway';
+  }
+
+    /* Hero Section */
+  
+    .hero-section {
+        background-color: var(--primary-color);
+        width: 100vw;
+        height: 70vh;
+        padding: 4rem 0;
+      }
+      
+      .hero-section h1 {
+        color: var(--secondary-color); 
+        font-weight: 800;
+      }
+      
+      .search-box {
+        position: relative;
+        max-width: 600px;
+      }
+      
+      .search-box input {
+        padding: 1.8rem;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        font-size: 15px;
+    
+      }
+    
+    .search-box input:focus{
+        outline: none;
+       
+        
+    }
+    .search-box p{
+        padding-top: 0px;
+    }
+      .img-fluid {
+        width: 30em;
+        margin-top: 80px;
+        margin-left: 228px;
+      }
+    
+    /* Responsive Adjustments */
+    @media (max-width: 1100px) {
+        .hero-section{
+            width: 100vw;
+            height: 30vh;
+    
+        }
+        .img-fluid{
+            width: 20em;
+            margin-top: 110px;
+            margin-left: 180px;
+        }
+    
+    }
+    
+       /* Responsive Adjustments */
+    @media (max-width: 768px){
+        .hero-section{
+            width: 100vw;
+            height: 50vh;
+        }
+    
+    
+    
+        .img-fluid{
+            display: none;
+        }
+        
+    }
+    
+    
+      
+      /* Popular Products and Popular  Categories */
+      .other {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .pro{
+        text-decoration: none;
+        color: var(--primary-color);
+        font-size: 18px;
+    }
+     
+      .section-title {
+        color: var(--secondary-color);
+        font-weight: 700;
+        margin-bottom: 2rem;
+      }
+      
+      .product-card {
+        transition: transform 0.3s ease;
+        border: none;
+        box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+        
+      }
+    
+    
+      
+      .product-card:hover {
+        transform: translateY(-5px);
+      }
+      
+      .product-card img {
+        height: 200px;
+        object-fit: cover;
+      }
+      
+      .product-card .card-body {
+        padding: 1.5rem;
+      }
+      
+      .product-card .card-title {
+        font-weight: 600;
+        font-size: 17px;
+        color: #0b0b0b;
+        margin-bottom: 2rem;
+      }
+      .card-text, span{
+        font-size: 12px;
+        font-weight: 800;
+        color: #1a19195c;
+      }
+      .card-body p{
+        font-weight: 800;
+      }
+     
+    
+      /* trust */
+    
+    .trust h1 {
+      font-size: 2.5rem;
+      color: #000; /* Sets h1 color to black */
+    }
+    
+    .trust p {
+      font-size: 1.1rem;
+    }
+    
+    .trust img {
+      max-width: 100%;
+      height: auto;
+      margin-top: 20px;
+      opacity: 0.9;
+      transition: opacity 0.3s ease;
+    }
+    
+    .trust img:hover {
+      opacity: 1; /* Hover effect */
+    }
+    
+    
+    
+      
+
+    
+    
+      
+      /* Buttons */
+      .btn-primary {
+        background-color: var(--primary-color);
+        border-color: var(--primary-color);
+      }
+      
+      .btn-primary:hover {
+        background-color: darken(var(--primary-color), 10%);
+        border-color: darken(var(--primary-color), 10%);
+      }
+      
+      .btn-outline-primary {
+        color: var(--primary-color);
+        border-color: var(--primary-color);
+      }
+      
+      .btn-outline-primary:hover {
+        background-color: var(--primary-color);
+        border-color: var(--primary-color);
+      }
+      
+      /* Responsive Adjustments */
+      @media (max-width: 768px) {
+        .hero-section {
+          padding: 2rem 0;
+        }
+        
+        .hero-section h1 {
+          font-size: 2.5rem;
+        }
+        
+        .feature-box {
+          margin-bottom: 1rem;
+        }
+      }

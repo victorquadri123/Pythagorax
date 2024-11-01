@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+
+:root {
+    --primary-color: rgb(192, 166, 20);
+    --secondary-color: #2B2B2B;
+  }
+        /* Hero Section Styling */
+        .hero {
+            background: linear-gradient(to right, #ffd700, var(--primary-color));
+            color: #333;
+            padding: 40px 0;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+        .hero p {
+            font-size: 1.2rem;
+        }
+
+        /* Contact Form Styling */
+        .contact-form .form-control {
+            border-radius: 0.25rem;
+            margin-bottom: 15px;
+        }
+
+        .contact-form button {
+            background-color: var(--primary-color);
+            border-color: gold;
+            color: #333;
+            width: 100%;
+        }
+        .contact-form button:hover{
+            background-color: var(--primary-color);
+        }
+
+        /* Contact Info Styling */
+        .contact-info h5 {
+            color: #333;
+        }
+
+        .contact-info p {
+            color: #666;
+            font-size: 1rem;
+        }
+
+        /* Icon Styling */
+        .icon {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            margin-right: 10px;
+        }
+
+        /* Social Media Icons */
+        .social-icons i {
+            font-size: 1.5rem;
+            color: #333;
+            margin-right: 15px;
+            transition: color 0.3s;
+        }
+
+        .social-icons i:hover {
+            color: var(--primary-color);
+        }
+
+        /* Map Styling */
+        .map-container {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            height: 300px;
+            margin-top: 30px;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 767.98px) {
+            .contact-info {
+                text-align: center;
+                margin-bottom: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    {% include "base.html" %}
+<!-- Hero Section -->
+<section class="hero">
+    <div class="container">
+        <h1>Contact Us</h1>
+        <p>We’re here to assist you with any inquiries you may have!</p>
+    </div>
+</section>
+
+<!-- Contact Information and Form Section -->
+<section class="py-5">
+    <div class="container">
+        <div class="row">
+            <!-- Contact Information -->
+            <div class="col-md-4 contact-info">
+                <div class="mb-4">
+                    <span class="icon fas fa-map-marker-alt"></span>
+                    <h5>Our Location</h5>
+                    <p>123 Main St, Lagos, Nigeria</p>
+                </div>
+                <div class="mb-4">
+                    <span class="icon fas fa-phone-alt"></span>
+                    <h5>Phone</h5>
+                    <p>+234 123 456 7890</p>
+                </div>
+                <div class="mb-4">
+                    <span class="icon fas fa-envelope"></span>
+                    <h5>Email</h5>
+                    <p>support@Pythagorax.com</p>
+                </div>
+                <!-- Social Media Icons -->
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-square"></i></a>
+                    <a href="#"><i class="fab fa-twitter-square"></i></a>
+                    <a href="#"><i class="fab fa-instagram-square"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="col-md-8">
+                <form class="contact-form">
+                    <input type="text" class="form-control" placeholder="Your Name" required>
+                    <input type="email" class="form-control" placeholder="Your Email" required>
+                    <input type="tel" class="form-control" placeholder="Your Phone Number" required>
+                    <input type="text" class="form-control" placeholder="Subject" required>
+                    <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn btn-primary mt-3">Send Message</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Map Section -->
+        <div class="map-container mt-5">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.8549941417753!2d-0.12762568484854765!3d5.603716495943337!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNcKwMzYnMTMuNSJOIDDCsDA3JzQxLjciRQ!5e0!3m2!1sen!2sgh!4v1639231784001!5m2!1sen!2sgh"
+                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+
+        <!-- FAQ Section -->
+        <section class="mt-5">
+            <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+            <div class="accordion" id="faqAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            What is your refund policy?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            We offer a full refund within 30 days of purchase, provided the item is returned in its original condition.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            How can I track my order?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            You can track your order using the tracking link provided in your confirmation email or by contacting our support team.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Do you offer international shipping?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Yes, we do offer international shipping. Additional charges and delivery times vary by country.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+       
+    </div>
+</section>
+{% include "footer.html" %}
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
