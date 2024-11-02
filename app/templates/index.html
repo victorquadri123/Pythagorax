@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Printivo - Quality Printing Services</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link href="style.css" rel="{% static 'css/style.css'  %}">
     <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+    <link href="{% static 'css/style.css' %}" rel='stylesheet'>
+    
 </head>
 <body>
     {% include "base.html" %}
@@ -39,7 +39,7 @@
       <div class="container">
         <div class="other">
         <h2 class="section-title mb-4">Popular Products</h2> 
-        <a class="pro" href="#">See All Products</a>
+        <a class="pro" href="{% url 'app:all_product' %}">See All Products</a>
         </div>
         <div class="row g-4">
           <div class="col-md-3">
@@ -49,7 +49,7 @@
                 <h5 class="card-title">Two- sided Business Cards</h5>
                 <p class="card-text">STARTING AT</p>
                 <p>#15,000 <span>per 100</span></p>
-                <a href="#" class="btn btn-outline-primary">Order Now</a>
+                <a href="#" class="btns">Order Now</a>
               </div>
             </div>
           </div>
@@ -60,7 +60,7 @@
                 <h5 class="card-title">A5 flyers (Single Sided)</h5>
                 <p class="card-text">STARTING AT</p>
                 <p>#25,000 <span>per 100</span></p>
-                <a href="#" class="btn btn-outline-primary">Order Now</a>
+                <a href="#" class="btns btn-outline">Order Now</a>
               </div>
             </div>
           </div>
@@ -71,7 +71,7 @@
                 <h5 class="card-title">Round Stickers (3.5" Diameter)</h5>
                 <p class="card-text">STARTING AT</p>
                 <p>#17,000 <span>per 100</span></p>
-                <a href="#" class="btn btn-outline-primary">Order Now</a>
+                <a href="#" class="btns btn-outline">Order Now</a>
               </div>
             </div>
           </div>
@@ -82,7 +82,7 @@
                 <h5 class="card-title">Simple Mugs</h5>
                 <p class="card-text">STARTING AT</p>
                 <P>#4,800 <span>per 1</span></P>
-                <a href="#" class="btn btn-outline-primary">Order Now</a>
+                <a href="#" class="btns btn-outline-primary">Order Now</a>
               </div>
             </div>
           </div>
@@ -93,7 +93,7 @@
                 <h5 class="card-title">Postcards (A6)</h5>
                 <p class="card-text">STARTING AT</p>
                 <P>#22,300 <span>per 50</span></P>
-                <a href="#" class="btn btn-outline-primary">Order Now</a>
+                <a href="#" class="btns btn-outline">Order Now</a>
               </div>
             </div>
           </div>
@@ -104,7 +104,7 @@
                 <h5 class="card-title">Roll Up Banners (Big Base)</h5>
                 <p class="card-text">STARTING AT</p>
                 <P>#55,000 <span>per 1</span></P>
-                <a href="#" class="btn btn-outline-primary">Order Now</a>
+                <a href="#" class="btns btn-outline">Order Now</a>
               </div>
             </div>
           </div>
@@ -115,7 +115,7 @@
                 <h5 class="card-title">A2 Posters</h5>
                 <p class="card-text">STARTING AT</p>
                 <P>#71,100 <span>per 100</span></P>
-                <a href="#" class="btn btn-outline-primary">Order Now</a>
+                <a href="#" class="btns btn-outline">Order Now</a>
               </div>
             </div>
           </div>
@@ -126,7 +126,7 @@
                 <h5 class="card-title">Trifold Brochures</h5>
                 <p class="card-text">STARTING AT</p>
                 <P>#47,500 <span>per 100</span></P>
-                <a href="#" class="btn btn-outline-primary">Order Now</a>
+                <a href="#" class="btns btn-outline">Order Now</a>
               </div>
             </div>
           </div>
@@ -137,7 +137,7 @@
                 <h5 class="card-title">Landscape ID Cards</h5>
                 <p class="card-text">STARTING AT</p>
                 <P>#3,100 <span>per 1</span></P>
-                <a href="#" class="btn btn-outline-primary">Order Now</a>
+                <a href="#" class="btns btn-outline">Order Now</a>
               </div>
             </div>
           </div>
@@ -148,7 +148,7 @@
                 <h5 class="card-title">Off White T-shirts</h5>
                 <p class="card-text">STARTING AT</p>
                 <P>#6,000 <span>per 1</span></P>
-                <a href="#" class="btn btn-outline-primary">Order Now</a>
+                <a href="#" class="btns btn-outline">Order Now</a>
               </div>
             </div>
           </div>
@@ -159,7 +159,7 @@
                 <h5 class="card-title">A4 Branded Paper Bags</h5>
                 <p class="card-text">STARTING AT</p>
                 <P>#104,800 <span>per 100</span></P>
-                <a href="#" class="btn btn-outline-primary">Order Now</a>
+                <a href="#" class="btns btn-outline">Order Now</a>
               </div>
             </div>
           </div>
@@ -170,7 +170,7 @@
                 <h5 class="card-title">A4 Courier Bags</h5>
                 <p class="card-text">STARTING AT</p>
                 <P>#27,500 <span>per 100</span></P>
-                <a href="#" class="btn btn-outline-primary">Order Now</a>
+                <a href="#" class="btns btn-outline">Order Now</a>
               </div>
             </div>
           </div>
@@ -184,7 +184,7 @@
         <div class="container">
           <div class="other">
           <h2 class="section-title mb-4">Popular Categories</h2> 
-          <a class="pro" href="#">See All Products</a>
+          <a class="pro" href="{% url 'app:all_product' %}">See All Products</a>
           </div>
           <div class="row g-4">
             <div class="col-md-3">
@@ -194,7 +194,7 @@
                   <h5 class="card-title">Greeting Cards</h5>
                   <p class="card-text">STARTING AT</p>
                   <p>#29,800 <span>per 50</span></p>
-                  <a href="#" class="btn btn-outline-primary">Order Now</a>
+                  <a href="#" class="btns btn-outline">Order Now</a>
                 </div>
               </div>
             </div>
@@ -205,7 +205,7 @@
                   <h5 class="card-title">Stickers</h5>
                   <p class="card-text">STARTING AT</p>
                   <p>#5,400 <span>per 75</span></p>
-                  <a href="#" class="btn btn-outline-primary">Order Now</a>
+                  <a href="#" class="btns btn-outline">Order Now</a>
                 </div>
               </div>
             </div>
@@ -219,7 +219,7 @@
       <div class="container">
         <h1>Nigeria’s No. 1 online print shop 👑</h1>
         <p>Our print services and solutions are trusted by these brands and over 15,000 other businesses in Nigeria.</p>
-        <img src="images/Group_61_h8vxko.png" alt="">
+        <img src="{% static 'images/Group_61_h8vxko.png' %}" alt="">
       </div>
      </section>
 

@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -95,7 +96,7 @@
               <h5>About Pythagorax</h5>
               <ul class="list-unstyled">
                 <li><a href="#" class="text-light">About Us</a></li>
-                <li><a href="#" class="text-light">Contact Us</a></li>
+                <li><a href="{% url 'app:contact' %}" class="text-light">Contact Us</a></li>
                 <li><a href="#" class="text-light">Careers</a></li>
               </ul>
             </div>
@@ -125,7 +126,7 @@
               </div>
               <h5>Accepted Payments</h5>
               <div class="payment">
-                <img src="{% static 'images/payment.png' %}" alt="payment">
+                <img src="{% static 'images/payment.png' %}" alt="payment"> 
               </div>
             </div>
           </div>
