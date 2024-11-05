@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Body */
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f4f6f8;
+    color: #333;
+}
+
+/* Container */
+.container {
+    width: 400px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Title */
+.container h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 8px;
+}
+
+/* Subtitle */
+.container p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Labels */
+label {
+    display: block;
+    text-align: left;
+    font-size: 13px;
+    color: #333;
+    margin-bottom: 6px;
+    font-weight: 500;
+}
+
+/* Input Fields */
+.container input[type="text"],
+.container input[type="email"],
+.container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s ease;
+    background-color: #f9f9f9;
+}
+
+/* Focus Effect */
+.container input[type="text"]:focus,
+.container input[type="email"]:focus,
+.container input[type="password"]:focus {
+    border-color: #888;
+    background-color: #fff;
+}
+
+/* Primary Button */
+.container .primary-button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background-color: rgb(192, 166, 20);
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Primary Button Hover */
+.container .primary-button:hover {
+    background-color: rgb(192, 166, 20);
+}
+
+/* Google Button */
+.container .google-button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 16px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background-color: white;
+    color: #555;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Google Button Hover */
+.container .google-button:hover {
+    background-color: #f4f4f4;
+}
+
+/* Footer Links */
+.footer-links {
+    margin-top: 20px;
+    font-size: 13px;
+    color: #666;
+}
+
+.footer-links a {
+    color: rgb(192, 166, 20);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+} 
